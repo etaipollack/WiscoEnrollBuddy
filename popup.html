@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UW Course Buddy</title>
+
+  <!-- Google Font (works in Chrome extension CSP) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --uw-red: #c5050c;
+      --uw-red-dk: #9b0407;
+      --uw-white: #ffffff;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--uw-red);
+      color: var(--uw-white);
+    }
+
+    .container {
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0 0 18px 0;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin: 0 0 22px 0;
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 14px;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      background: var(--uw-white);
+      color: var(--uw-red);
+      cursor: pointer;
+      transition: background .15s ease;
+    }
+    button:hover { background: #f0f0f0; }
+
+    /* hidden by default — shown after setup */
+    .done { display: none; }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="welcome">
+    <h1>Wisco Enroll Buddy</h1>
+
+    <p>Welcome!<br>
+       Head over to <a style="color:#ffffff;" href="https://api.madgrades.com">https://api.madgrades.com/</a> and sign in. Copy your API key and paste below to activate the extension. <br> </p>
+
+    <input id="keyInput" type="text" placeholder="MadGrades API key" spellcheck="false" />
+
+    <button id="saveBtn">Save&nbsp;Key</button>
+  </div>
+
+  <div class="container done" id="ready">
+    <h1>UW Course Buddy</h1>
+    <p>All set!<br>
+       Head over to <strong>enroll.wisc.edu</strong> and watch it work.</p>
+  </div>
+
+  <!-- ES-module script -->
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

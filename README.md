@@ -8,8 +8,8 @@
 | **Rate-My-Professors average rating** (`RMP 4.37 / 5`) | After each instructor’s name | Opens that professor’s Rate-My-Professors page |
 
 <p align="center">
-  <img src="screenshots/Screenshot1.png" width="700" alt="Example of MadGrades labels inside enroll.wisc.edu">
-  <img src="screenshots/Screenshot2.png" width="700" alt="Example of RateMyProfessor labels inside enroll.wisc.edu">
+  <img src="screenshots/Screenshot1.jpg" width="700" alt="Example of MadGrades labels inside enroll.wisc.edu">
+  <img src="screenshots/Screenshot2.jpg" width="700" alt="Example of RateMyProfessor labels inside enroll.wisc.edu">
 </p>
 
 ---

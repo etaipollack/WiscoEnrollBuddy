@@ -9,7 +9,7 @@
 
 <p align="center">
   <img src="screenshots/Screenshot1.jpg" width="700" alt="Example of MadGrades labels inside enroll.wisc.edu">
-  <img src="screenshots/Screenshot2.jpg" width="700" alt="Example of RateMyProfessor labels inside enroll.wisc.edu">
+  <img src="screenshots/screenshot2.jpg" width="700" alt="Example of RateMyProfessor labels inside enroll.wisc.edu">
 </p>
 
 ---
